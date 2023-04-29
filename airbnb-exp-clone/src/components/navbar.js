@@ -5,17 +5,18 @@ function Navbar() {
         <>
             <div className="navArea">
                 <img 
+                    
                     src={process.env.PUBLIC_URL + '/static/images/Airbnb_logo.png'}  
                     alt="Airbnb Logo" width="48"/>
             </div>
             <div className="banner">
                 <img 
                     src={process.env.PUBLIC_URL + '/static/images/airimg3.png'}  
-                    alt="Banner Collage" width="280px"/>
+                    alt="Banner Collage" className='img-fluid' />
             </div>
-            <div>
+            <div className="head-text">
                 <div className="banHeader">
-                    <h3>Online Experiences</h3>
+                    <text>Online Experiences</text>
                 </div>
                 <div className="banText">
                     <text>

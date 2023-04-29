@@ -4,12 +4,10 @@ import Card from './card';
 
 function Backspace() {
     return(
-        <>
-            <div className="bkspace">
-                <Hero />
-                <Card />
-            </div>
-        </>
+        <div className="bkspace">
+            <Hero />
+            <Card />
+        </div>
     );
 }
 
