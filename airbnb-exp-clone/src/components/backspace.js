@@ -1,9 +1,12 @@
 import React from 'react';
+import Hero from './hero';
 
 function Backspace() {
     return(
         <>
-            <h1>Styles for the Back Ground</h1>
+            <div className="bkspace">
+                <Hero />
+            </div>
         </>
     );
 }
