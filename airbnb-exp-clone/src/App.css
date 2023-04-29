@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .App-header {
   background-color: #dd82c2;
   min-height: 100vh;
@@ -36,9 +25,9 @@
   padding-left: 15px;
 }
 
-.herospace{
+/* .herospace{
 
-}
+} */
 
 .banHeader{
   margin-top: 10px;
@@ -47,10 +36,39 @@
 }
 
 .banText{
-  width: 200px;
+  width: 250px;
   text-align: left;
   padding-left: 15px;
-  font-size: 0.5em;
+  font-size: 0.6em;
   line-height: 1.2;
   margin-bottom: 10px;
+}
+
+.cardspace{
+  border: 0px solid #FF0000;
+  margin: 15px;
+  max-width: 180px;
+  padding: 5px;
+}
+
+.para{
+  margin-top: 5px;
+  font-size: 0.6em;
+  text-align: left;
+}
+.rateSpace{
+  margin-left: 5px;
+}
+.shade{
+  color: #9b9b9b;
+}
+.title{
+  font-size: 0.90em;
+}
+.price{
+  font-weight:bold;
+  font-size: 0.90em;
+}
+.person{
+  font-size: 0.90em;
 }
