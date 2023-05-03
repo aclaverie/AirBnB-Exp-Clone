@@ -16,12 +16,12 @@ function Navbar() {
             </div>
             <div className="head-text">
                 <div className="banHeader">
-                    <text>Online Experiences</text>
+                    <div>Online Experiences</div>
                 </div>
                 <div className="banText">
-                    <text>
+                    <div>
                         Join unique interactive activities led by one-of-a-kind hosts-all without leaving home.
-                    </text>
+                    </div>
                 </div>
             </div>
         </>

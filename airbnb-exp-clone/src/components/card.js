@@ -1,30 +1,35 @@
 import React from 'react';
 
-function Card() {
-    return(
-        <div className="cardspace">
-            <div className="para">
+function Card({cardData}) {
+    
+    //solve the key warning when using .map in React
+    
+    const cards = cardData.map((item) =>  {
+        return(
+            <div className="para" key={item.id}>
                 <img 
-                    src={process.env.PUBLIC_URL + '/static/images/katie-zaferes.png'}  
-                    alt="Katie Zaferes Picture" className='img-fluid' />
+                    src={process.env.PUBLIC_URL + '/static/images/'+ item.img}  
+                    alt="Katie Zaferes" className='img-fluid rounded' />
                 <br />
                 <img 
                     src={process.env.PUBLIC_URL + '/static/images/star.png'}  
-                    alt="Katie Zaferes Picture" width="15px" />
+                    alt="Katie Zaferes" width="15px" />
             
-                <text>
-                    <span className="rateSpace">5.0</span>
-                    <span className="shade">(6)</span>
-                    <span className="shade">·USA</span>
-                </text>
+                <span>
+                    <span className="rateSpace">{item.rate}</span>
+                    <span className="shade">({item.reviewCount}) · </span>
+                    <span className="shade">{item.country}</span>
+                </span>
                 <br />
-                <text className="title">Life lessons with Katie Zaferes</text>
-                <br />
-                <text className="price">From $136</text>
-                <text className="person">/Person</text>
+                <div className="title">{ item.title }</div>
+                <span className="price">From ${ item.price }</span>
+                <span className="person">/Person</span>
             </div>
-        </div>
+        )
+    })
 
+    return(
+        <div className="cardspace">{cards}</div>
     );
 }
 
