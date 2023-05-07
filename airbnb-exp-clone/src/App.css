@@ -20,9 +20,9 @@
   background-color: #ffffff;
   color:#000000;
 }
-.banner{
-  width: 100% \9;
-}
+/* .banner{
+  width:;
+} */
 
 .navArea{
   border-bottom: 1px solid #9b9b9b;
@@ -45,21 +45,24 @@
   margin-bottom: 10px;
 }
 
+
+
 .cardspace{
   border: 0px solid #FF0000;
   margin: 15px;
   padding: 5px;
   display: flex;
+  align-items: top;
   flex-direction: row;
   justify-content: space-around;
-
 }
+
 
 .para{
   border: 0px solid #FF0000;
-  margin-top: 5px;
+  margin: 5px;
+  padding: 5px;
   font-size: 0.6em;
-  max-width: 175px;
   text-align: left;
   
 }

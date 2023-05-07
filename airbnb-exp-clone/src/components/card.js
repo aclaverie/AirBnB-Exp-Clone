@@ -9,7 +9,7 @@ function Card({cardData}) {
             <div className="para" key={item.id}>
                 <img 
                     src={process.env.PUBLIC_URL + '/static/images/'+ item.img}  
-                    alt="Katie Zaferes" className='img-fluid rounded' />
+                    alt="Katie Zaferes" width="170px" className='img-fluid rounded' />
                 <br />
                 <img 
                     src={process.env.PUBLIC_URL + '/static/images/star.png'}  
